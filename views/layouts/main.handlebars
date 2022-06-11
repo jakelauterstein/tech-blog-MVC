@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Tech Blog World</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-<nav class="nav-wraper indigo">
-    <div class="container">
-        <a href="#" class="brand-logo">💻  – Tech Blog World – 💻</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-links">
-            <i class="material-icons">menu</i>
-        </a>
-    <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Logout</a></li>
-    </ul>
-    </div>
+  <div class="wrapper">
+      <header>
+    <h1>
+      <a href="/">Tech Blog World</a>
+    </h1>
+    <nav>
+      <a href="/login">Login</a>
+      <button id="logout" class="btn-no-style">logout</button>
 
-</nav>
-
-<ul class="sidenav" id="mobile-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">Logout</a></li>
-</ul>
-
+    </nav>
+  </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Tech-Blog <span>: &copy 2022</span>
+      Thanks for visiting!
     </footer>
-  
+  </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav()
-    })
-</script>
+  <script src="/javascript/logout.js"></script>
 </body>
+
 </html>
