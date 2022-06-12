@@ -40,7 +40,7 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/dashboard');
         console.log("Logged in!");
       } else {
         alert(response.statusText);
